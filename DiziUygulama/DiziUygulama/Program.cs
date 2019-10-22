@@ -21,7 +21,14 @@ namespace DiziUygulama
                 Console.WriteLine(a[i]);
             }
             
-            Console.ReadKey();
+            int toplam = 0;
+            for (int sn = 0; sn < dizi.Length; sn++)
+            {
+                if (a[sn] < 50)
+                    toplam = toplam + a[sn];
+            } 
+            Console.WriteLine("50 Den Küçük Sayıların Toplamı =) " + toplam);
+            
         }
     }
 }
